@@ -6,7 +6,6 @@
 package actividad4;
 
 /**
- *
  * @author DavoLarris
  */
 class PushPeopleToList implements Runnable { 
@@ -22,13 +21,15 @@ class PushPeopleToList implements Runnable {
         this.numberOfPeople = numberOfPeople;
      } 
     
-    @Override public void run() { 
+    @Override 
+    public void run() { 
         System.out.println("Starting to push people to an ArrayList");
 
 //TODO: Crea un ArrayList. A continuación, dentro de un bucle con el 
 //mismo número de iteraciones que personas a insertar, crea una espera 
 //de medio segundo, crea la persona a insertar e insértala 
-    System.out.println("Everyone is already in the ArrayList"); } 
+    System.out.println("Everyone is already in the ArrayList"); 
+    } 
 
 
 }
