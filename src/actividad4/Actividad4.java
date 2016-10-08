@@ -16,11 +16,17 @@ public class Actividad4 {
      */
     public static void main(String[] args) {
         int numberOfPeople = 20; 
-        Thread t1 = new Thread(new PushPeopleToFile (numberOfPeople));
-        t1.start(); 
+        //Thread t1 = new Thread(new PushPeopleToFile (numberOfPeople));
+        //t1.start(); 
         
-        Thread t2 = new Thread(new PushPeopleToList(numberOfPeople)); 
-        t2.start();
+        //Thread t2 = new Thread(new PushPeopleToList(numberOfPeople)); 
+        //t2.start();
+        
+        PushPeopleToFile t1 = new PushPeopleToFile (numberOfPeople);
+        t1.run(); 
+        
+        PushPeopleToList t2 = new PushPeopleToList(numberOfPeople); 
+        t2.run();
     }
     
 }
